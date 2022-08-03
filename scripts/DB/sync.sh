@@ -10,3 +10,5 @@ do
   echo "yes" | npx prisma migrate dev
 
 done <  "${root_path}/scripts/DB/clients.txt"
+# Reset schema to public
+sed -i "s/DATABASE_SCHEMA=.*/DATABASE_SCHEMA=public/" "${root_path}/.env"

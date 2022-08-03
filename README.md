@@ -58,6 +58,9 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Database schema
+[draw.io](https://app.diagrams.net/#G1NsKXb61CVf1ZlotgOE8ida-i65utwrRG)
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).

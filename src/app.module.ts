@@ -2,12 +2,13 @@ import { MiddlewareConsumer, Module, NestModule } from '@nestjs/common';
 
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { DatabaseModule } from './database/database.module';
-import { MenuModule } from './menu/menu.module';
-import { LoggerMiddleware } from './middlewares/logger.middleware';
+import { DatabaseModule } from './modules/database/database.module';
+import { MenuModule } from './modules/menu/menu.module';
+import { LoggerMiddleware } from './common/middlewares/logger.middleware';
+import { DeliveryModule } from './modules/delivery/delivery.module';
 
 @Module({
-  imports: [MenuModule, DatabaseModule],
+  imports: [MenuModule, DatabaseModule, DeliveryModule],
   controllers: [AppController],
   providers: [AppService],
 })

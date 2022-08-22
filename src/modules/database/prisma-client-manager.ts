@@ -1,7 +1,7 @@
 import { Injectable, OnModuleDestroy } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import { Request } from 'express';
-import { config } from '../config';
+import { config } from '../../config';
 
 type Client = { [key: string]: PrismaClient };
 
